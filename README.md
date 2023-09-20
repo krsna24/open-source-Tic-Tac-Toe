@@ -1,6 +1,11 @@
 ## Documentation
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Contributing
+
+Please read our [Contribution Guidelines](CONTRIBUTING.md) before contributing to this project.
+
+
 ### Introduction
 
 The "Tic Tac Toe" game is an open-source two-player game played on a 3x3 grid. This project demonstrates various programming concepts and is available for community contributions under the MIT License. It covers topics such as lambda expressions, classes, object-oriented programming, exception handling, conditional statements, loops, and the use of external libraries like `tabulate`.
