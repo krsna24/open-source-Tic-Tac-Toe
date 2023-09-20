@@ -1,83 +1,109 @@
-## Documentation
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Contributing
+# Tic Tac Toe Game
 
-Please read our [Contribution Guidelines](CONTRIBUTING.md) before contributing to this project.
+Welcome to the Tic Tac Toe game project! This open-source project is perfect for newcomers to the world of open source contributions. Whether you're a beginner programmer or an experienced developer, there are plenty of opportunities to get involved. We're excited to have you join our community!
 
+## Table of Contents
 
-### Introduction
+- [License](#license)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [How to Play](#how-to-play)
+  - [Starting the Game](#starting-the-game)
+  - [Game Menu](#game-menu)
+- [Project Structure](#project-structure)
+  - [Classes](#classes)
+- [Contributing](#contributing)
+- [Open Source](#open-source)
 
-The "Tic Tac Toe" game is an open-source two-player game played on a 3x3 grid. This project demonstrates various programming concepts and is available for community contributions under the MIT License. It covers topics such as lambda expressions, classes, object-oriented programming, exception handling, conditional statements, loops, and the use of external libraries like `tabulate`.
+## License
+
+This project is open source and released under the [MIT License](https://opensource.org/licenses/MIT). This means you are free to use, modify, and distribute the code as you like, as long as you respect the terms of the license.
+
+## Getting Started
+
+Before you jump into contributing, let's make sure you have everything set up.
 
 ### Installation
 
-To get started, you need to install the `tabulate` module. You can do this using pip:
+To get started with the Tic Tac Toe game, you need to install the `tabulate` module. Don't worry; it's easy! Just follow these steps:
 
-```
-pip install tabulate
-```
+1. Open your terminal or command prompt.
+2. Run the following command:
 
-### Usage
+   ```
+   pip install tabulate
+   ```
 
-1. **Start the Game**
-   - Run the `Main()` constructor from the `main.py` file to begin the game:
+That's it! You're now ready to start contributing to the project.
 
-     ```python
-     from main import Main
+## How to Play
 
-     Main()
-     ```
+Let's learn how to play the Tic Tac Toe game first.
 
-2. **Game Menu**
-   - The game presents a menu with the following options:
-     - Play game
-     - View score card
-     - Quit
+### Starting the Game
 
-#### Play game
+To start playing the game, follow these steps:
 
-- Choose option 1 to play the game.
-- Enter the number of matches you want to play and start playing.
+1. Open the `main.py` file in your favorite code editor.
+2. Find the following lines of code:
+
+   ```python
+   from main import Main
+
+   Main()
+   ```
+
+3. Run this code to start the game.
+
+### Game Menu
+
+The game menu offers three options:
+
+1. **Play game**: Choose this option to play the game.
+2. **View score card**: Select this option to view game statistics.
+3. **Quit**: Use this option to exit the game.
+
+#### Play Game
+
+When you choose to play the game, you can:
+
+- Specify the number of matches you want to play.
+- Take turns with another player to mark the board.
 - After each match, the result will be displayed on the screen.
 
-#### View score card
+#### View Score Card
 
-- Choose option 2 to view the score card.
-- The score card will display the following statistics:
-  - Number of matches played
-  - Number of matches won by player X
-  - Number of matches won by player O
-  - Number of draws
+Selecting the "View score card" option allows you to see the following statistics:
+
+- Number of matches played.
+- Number of matches won by player X.
+- Number of matches won by player O.
+- Number of draws.
 
 #### Quit
 
-- Choose option 3 to quit the game.
+If you want to exit the game at any point, choose the "Quit" option.
+
+## Project Structure
+
+Let's take a quick look at the project's structure and the classes involved.
 
 ### Classes
 
 #### Game
 
-- `__init__`: Initializes the game board and the win conditions for player X and player O.
-- `play_game`: Draws the board and takes input from the user.
-- `draw_board`: Draws the current state of the board using the `tabulate` module.
-- `play_move`: Places the mark of the current player on the board, updates the game board, and draws the updated board.
-- `input`: Takes user input, validates it, and makes a move if the input is valid. It also checks if the game has ended.
-- `draw_condition`: Checks if the game has ended in a draw.
-- `wins`: Checks if the game has ended and returns the winner (1 for X, 0 for O, -1 for no winner).
-- `gameNotFinished`: Checks if the game is still ongoing.
-- `is_unplayable`: Checks if the game is in an impossible state (both X and O have won, or the difference between X and O moves is greater than 1).
-- `diagonalMat`: Returns the two diagonals of the board.
-- `colMat`: Returns the columns of the board.
-- `countX`: Counts the number of 'X' marks on the board.
-- `countO`: Counts the number of 'O' marks on the board.
-- `has_empty_cells`: Checks if the board has any empty cells.
+The `Game` class is responsible for managing the game board and its logic. It includes methods for playing the game, drawing the board, checking for wins, and more.
 
 #### Main
 
-- `__init__`: The constructor initializes the game menu loop.
-- `play`: Plays a specified number of games, tracks scores, and prints game results.
-- `score_card`: Displays game statistics in a tabular format.
-- `greet_user`: Displays a welcome message and the game menu.
-- `add_score`: Updates game statistics (total games played, X wins, O wins, draws).
-- **Open Source**: This project is open source and welcomes contributions from the community under the MIT License.
+The `Main` class handles the game menu loop and keeps track of game statistics. It's the entry point for starting and playing the game.
+
+## Contributing
+
+Are you excited to contribute to this project? Great! Before you start, please read our [Contribution Guidelines](CONTRIBUTING.md) to understand how to contribute effectively.
+
+## Open Source
+
+This project is open source and welcomes contributions from the community under the MIT License. We believe in the power of collaboration, and we're thrilled to have you as part of our open source community. Let's make this Tic Tac Toe game even better together!
