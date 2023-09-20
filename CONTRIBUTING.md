@@ -59,7 +59,6 @@ Your suggestions for improving the project are valuable. To suggest enhancements
 
 Welcome to the project! If you're making your first code contribution, here's what you need to know:
 
-- Don't worry! We're here to guide you.
 - The codebase is straightforward; start by reading the [README.md](https://github.com/vivekkdagar/Tic-Tac-Toe-Public/blob/main/README.md) for instructions.
 - If you encounter issues, reach out for assistance; we're a supportive community.
 
